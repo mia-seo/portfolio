@@ -1,0 +1,50 @@
+{
+  "id": 4,
+  "title": "Youtube",
+  "thumbnail": "https://user-images.githubusercontent.com/117281717/236795369-f9bf87be-39b7-4773-af65-fb0c4f52416c.png",
+  "projectInfo": [
+    "Youtube API를 이용한 Youtube 클론 코딩입니다.",
+    "기간 : 2023.05.04 ~ 2023.05.12 (1주)",
+    "Frontend 1명"
+  ],
+  "pages": [
+    { "title": "site", "url": "https://stately-semifreddo-e9bdea.netlify.app" },
+    { "title": "repo", "url": "https://github.com/mia-seo/Youtube" },
+    {
+      "title": "blog",
+      "url": "https://velog.io/@mia/react-query-query-key%EC%99%80-query-function"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "React",
+    "React Query",
+    "TailwindCSS",
+    "Postman",
+    "Github"
+  ],
+  "contribute": [
+    {
+      "header": "client side routing을 구현하기 위한 react-router 사용",
+      "body": [
+        "Outlet을 활용하여 search header와 content를 구분",
+        "params로 세부 페이지 구현",
+        "navigate와 location을 통한 페이지 이동과 데이터 공유"
+      ]
+    },
+    {
+      "header": "불필요한 통신을 막기위한 react-qury 사용",
+      "body": [
+        "캐싱 시간을 정하기 위해 stale-time 속성 사용",
+        "이해가 어려웠던 query key와 function에 대한 블로그 작성"
+      ]
+    },
+    {
+      "header": "필요한 hook과 라이브러리에 대한 깊은 이해",
+      "body": [
+        "fetch의 한계를 극복하기 위해 axios사용",
+        "context에 대해 공부하고 적용"
+      ]
+    }
+  ]
+}

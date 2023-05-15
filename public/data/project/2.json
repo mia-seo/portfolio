@@ -1,0 +1,49 @@
+{
+  "id": 2,
+  "title": "Calpick",
+  "thumbnail": "https://user-images.githubusercontent.com/117281717/215643992-b09bb49d-d4bd-46f2-af23-31a9f5227165.png",
+  "projectInfo": [
+    "영어 공인인증 시험 TOEIC과 리디북스를 참고한 영어시험 Calpick 예약 및 캘린더와 고사장 예약 서비스 만들기 프로젝트입니다.",
+    "기간 : 2023.01.30 ~ 2023.02.10 (2주)",
+    "Frontend 4명, Backend 2명"
+  ],
+  "pages": [
+    {
+      "title": "repo",
+      "url": "https://github.com/wecode-bootcamp-korea/41-2nd-CalPick-frontend"
+    },
+    {
+      "title": "blog",
+      "url": "https://velog.io/@mia/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0-CalPick"
+    }
+  ],
+  "stack": ["React", "styled-component", "Postman", "Notion", "Github"],
+  "contribute": [
+    {
+      "header": "공용 디자인 시스템 및 컴포넌트 생성",
+      "body": [
+        "협업을 위한 공용 디자인 시스템(컬러, 폰트) 생성",
+        "공통 컴포넌트(input) & 공용 훅(useInput) 생성"
+      ]
+    },
+    {
+      "header": "시험 예약 및 결제 페이지",
+      "body": [
+        "시험 예약 정보와 유저의 정보를 띄워주는 컴포넌트 생성",
+        "좌석을 예약 할 수 있는 좌석 선택 컴포넌트 생성"
+      ]
+    }
+  ],
+  "effort": [
+    {
+      "header": "팀원들의 명확한 프로젝트에 대한 이해를 하기 위한 노력",
+      "body": [
+        "1차 프로젝트에서의 부족했던 의사소통을 개선",
+        "모든 팀원들이 함께 있는 자리에서 구현할 페이지를 직접 그림으로 그림",
+        "백엔드에게 요청해야할 정보를 요구사항 정의서로, 페이지들은 피그마로 정리하여 공유",
+        "디자인 시스템, 공용 컴포넌트와 hook, 미팅내용은 노션으로 공유",
+        "계획들을 문서화시킴으로써 팀원들이 명확한 이해를 한 후 프로젝트를 시작할 수 있었음"
+      ]
+    }
+  ]
+}

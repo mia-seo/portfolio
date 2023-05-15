@@ -1,0 +1,28 @@
+[
+  {
+    "id": 2,
+    "title": "위코드 코딩 부트캠프",
+    "duration": "2022.12 ~ 2023.03",
+    "description": [
+      "웹 개발에 필요한 기본 컴퓨터 공학 지식을 학습했습니다.",
+      "SCSS와 styled-component를 프로젝트에 적용하여 스타일을 부여했습니다.",
+      "React와 관련 라이브러리, 훅을 학습하고 활용한 프로젝트를 진행했습니다.",
+      "코드 버전 관리를 위해 Git과 Github를 학습하여 활용해보았습니다.",
+      "기업과의 협업을 통해 실제 프로젝트에 참여하여 실무감각을 익혔습니다."
+    ],
+    "detailPage": true,
+    "imgUrl": "https://framerusercontent.com/images/XssbxhIY1qtHAlsVUoXlLkBn4c.png",
+    "url": "https://wecode.co.kr/",
+    "videoId": "Sab7KvvdIRk"
+  },
+  {
+    "id": 1,
+    "title": "스파르타 코딩클럽",
+    "duration": "2022.06 ~ 2022.08",
+    "description": [
+      "HTML, CSS, JavaScript의 기초를 학습했습니다.",
+      "jQuery, BootStrap 라이브러리를 학습했습니다."
+    ],
+    "detailPage": false
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": 4,
+    "title": "Youtube",
+    "thumbnail": "https://user-images.githubusercontent.com/117281717/236795369-f9bf87be-39b7-4773-af65-fb0c4f52416c.png",
+    "projectInfo": [
+      "Youtube API를 이용한 Youtube 클론 코딩입니다.",
+      "기간 : 2023.05.04 ~ 2023.05.12 (1주)"
+    ],
+    "stack": [
+      "JavaScript",
+      "React",
+      "React Query",
+      "TailwindCSS",
+      "Postman",
+      "Github"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "scordi",
+    "thumbnail": "https://user-images.githubusercontent.com/117281717/236794473-b5375973-7963-4f35-9242-6eb7d87e6d0a.png",
+    "projectInfo": [
+      "관리하기 어려운 SaaS 구독을 대신 관리해주는 플랫폼입니다.",
+      "기간 : 2023.02.13 ~ 2023.03.09 (4주)"
+    ],
+    "stack": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Recoil",
+      "TailwindCSS",
+      "DaisyUI",
+      "SwaggerUI",
+      "Notion",
+      "Github"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Calpick",
+    "thumbnail": "https://user-images.githubusercontent.com/117281717/215643992-b09bb49d-d4bd-46f2-af23-31a9f5227165.png",
+    "projectInfo": [
+      "영어 공인인증 시험 TOEIC과 리디북스를 참고한 영어시험 Calpick 예약 및 캘린더와 고사장 예약 서비스 만들기 프로젝트입니다.",
+      "기간 : 2023.01.30 ~ 2023.02.10 (2주)"
+    ],
+    "stack": ["React", "styled-component", "Postman", "Notion", "Github"]
+  },
+  {
+    "id": 1,
+    "title": "SIMPLE",
+    "thumbnail": "https://user-images.githubusercontent.com/117281717/236790757-c126d9d3-e443-4988-b4e3-88bf277a5d99.png",
+    "projectInfo": [
+      "고객의 마음을 움직이는 제품으로 공간을 감성적으로 만들어주는 캠핑용품을 판매하는 이커머스 사이트 만들기 프로젝트입니다.",
+      "기간 : 2023.01.03 ~ 2023.01.14 (2주)"
+    ],
+    "stack": ["React", "SCSS", "Notion", "Github"]
+  }
+]

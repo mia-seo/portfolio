@@ -1,0 +1,14 @@
+[
+  { "id": 1, "title": "Language", "list": ["JavsScript", "TypeScript"] },
+  {
+    "id": 2,
+    "title": "Framework / Library",
+    "list": ["React", "Recoil", "Next.js"]
+  },
+  {
+    "id": 3,
+    "title": "Markup",
+    "list": ["HTML", "CSS", "SCSS", "CSS-Module", "styled-components"]
+  },
+  { "id": 4, "title": "Tool", "list": ["SwaggerUI", "Github", "Notion"] }
+]
