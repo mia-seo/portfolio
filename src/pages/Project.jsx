@@ -18,14 +18,17 @@ export default function Project() {
   if (error) return <p>{error}</p>;
   return (
     <div className="flex flex-col gap-8 p-3 mt-24">
-      <div>
+      <div className="w-full flex justify-center">
         <img className="w-100px" src={project.thumbnail} alt={project.title} />
+      </div>
+      <div className="w-full flex justify-center mb-8">
+        <img className="w-[60%]" src={project.url} alt={project.title} />
       </div>
       <div className="flex justify-between px-3">
         <h2 className="w-[30%] flex flex-col gap-5 text-xl font-bold">
           Project
         </h2>
-        <ul className="w-[70%] flex flex-col gap-2 text-base list-disc mx-5">
+        <ul className="w-[70%] flex flex-col gap-2 text-base list-disc mx-5 px-3">
           {project && <li className="font-bold text-xl">{project.title}</li>}
           {project &&
             project.projectInfo.map((el, index) => <li key={index}>{el}</li>)}
@@ -68,7 +71,7 @@ export default function Project() {
           {project &&
             project.contribute.map(({ header, body }) => (
               <li className="mx-3" key={header}>
-                {header}
+                <p className="font-semibold py-2">{header}</p>
                 <ul className="list-disc mx-5">
                   {body.map((el) => (
                     <li key={el}>{el}</li>
@@ -78,24 +81,20 @@ export default function Project() {
             ))}
         </ol>
       </div>
-      {project.effort && (
+      {project.whatILearn && (
         <div className="flex justify-between p-3">
           <h2 className="w-[30%] flex flex-col gap-5 text-xl font-bold">
-            Effort
+            What I Learn
           </h2>
-          <ol className="w-[70%] flex flex-col gap-2 text-base list-decimal mx-5">
+          <ul className="w-[70%] flex flex-col gap-2 text-base list-disc mx-5">
             {project &&
-              project.effort.map(({ header, body }) => (
+              project.whatILearn.map(({ header, body }) => (
                 <li className="mx-3" key={header}>
-                  {header}
-                  <ul className="list-disc mx-5">
-                    {body.map((el) => (
-                      <li key={el}>{el}</li>
-                    ))}
-                  </ul>
+                  <p className="my-2 font-semibold">{header}</p>
+                  <pre className="whitespace-pre-wrap">{body}</pre>
                 </li>
               ))}
-          </ol>
+          </ul>
         </div>
       )}
     </div>

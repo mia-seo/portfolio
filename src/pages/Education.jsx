@@ -6,7 +6,7 @@ import { usePortfolio } from "../context/ApiContext";
 
 export default function Education() {
   const location = useLocation().state;
-  const { title, description, imgUrl, url, videoId } = location;
+  const { title, description, imgUrl, url, videoId, whatILearn } = location;
   const { portfolio } = usePortfolio();
 
   const { data: project } = useQuery(
@@ -36,9 +36,9 @@ export default function Education() {
             frameBorder="0"
           />
         </header>
-        <main>
+        <main className="flex flex-col gap-8">
           <div>
-            <h2 className="font-semibold text-2xl text-amber-400">학습</h2>
+            <h2 className="font-semibold text-2xl text-amber-400">Learning</h2>
             <ul className="text-base list-disc p-5">
               {description.map((el, index) => (
                 <li key={index}>{el}</li>
@@ -46,7 +46,20 @@ export default function Education() {
             </ul>
           </div>
           <div>
-            <h2 className="font-semibold text-2xl text-amber-400">프로젝트</h2>
+            <h2 className="font-semibold text-2xl text-amber-400">
+              What I Learn
+            </h2>
+            <ul className="text-base list-disc p-5">
+              {whatILearn.map(({ header, body }) => (
+                <li>
+                  <p className="font-semibold py-2">{header}</p>
+                  <pre>{body}</pre>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2 className="font-semibold text-2xl text-amber-400">Project</h2>
             <div className="flex flex-wrap gap-3">
               {project &&
                 project.map((project) => (
