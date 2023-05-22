@@ -10,11 +10,11 @@ export default function Stack() {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="w-[900px] flex flex-col gap-5">
+      <div className="w-[450px] md:w-full max-w-[900px] flex flex-col gap-5">
         <h1 className="font-bold text-2xl py-5 text-amber-400">기술 스택</h1>
         {stack &&
           stack.map(({ id, title, list }) => (
-            <div className="flex" key={id}>
+            <div className="flex flex-col gap-3 md:flex-row" key={id}>
               <h2 className="w-[30%] text-xl font-bold">{title}</h2>
               <ul className="w-[70%] flex gap-4 text-base">
                 {list.map((el, idx) => (

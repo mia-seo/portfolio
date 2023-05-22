@@ -3,7 +3,7 @@ import React from "react";
 export default function Introduction() {
   return (
     <div className="w-full flex justify-center py-10 border-b-2 border-gray-200">
-      <div className="w-[900px] flex justify-center bg-gray-200 p-10 rounded-md text-lg">
+      <div className="w-[450px] sm:w-full max-w-[900px] flex justify-center bg-gray-200 p-8 rounded-md text-lg">
         안녕하세요 👋🏻 한계를 두지않고 꾸준히 발전하며 성장하는 개발자,
         서지연입니다. <br />
         <br />

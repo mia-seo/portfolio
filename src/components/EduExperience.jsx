@@ -10,7 +10,7 @@ export default function EduExperience() {
   });
   return (
     <div className="w-full flex justify-center border-b-2 border-gray-200 py-10">
-      <div className="w-[900px] p-2">
+      <div className="w-[450px] md:w-full max-w-[900px] p-2">
         <h1 className="font-bold text-2xl py-5 text-amber-400">교육 이력</h1>
         {educate &&
           educate.map((el) => <Edu key={el.id} id={el.id} data={el} />)}
@@ -30,8 +30,8 @@ function Edu({ id, data }) {
   };
 
   return (
-    <div className="flex justify-between p-3">
-      <div className="w-[30%] flex flex-col">
+    <div className="flex flex-col gap-3 md:flex-row justify-between p-3">
+      <div className="w-full md:w-[30%] flex flex-col">
         <h1
           className={`text-xl font-bold ${
             detailPage

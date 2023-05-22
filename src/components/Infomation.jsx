@@ -17,8 +17,8 @@ export default function Infomation() {
   if (isLoading) return <h1>Loading...💫</h1>;
   if (error) return <p>{error}</p>;
   return (
-    <div className="w-full flex justify-center py-10 border-b-2 border-gray-200">
-      <div className="w-[900px] flex justify-center gap-20">
+    <div className="w-full py-10 border-b-2 border-gray-200">
+      <div className="w-[900px] flex flex-col items-center md:flex-row md:justify-center gap-20">
         <img
           className="w-[300px] h-[300px] rounded-full shadow-xl shadow-gray-700"
           src={profile.thumbnail}

@@ -21,7 +21,7 @@ body {
 }
 
 #root {
-  width: 1060px;
+  max-width: 1060px;
   display: flex;
   flex-direction: column;
   align-items: center;

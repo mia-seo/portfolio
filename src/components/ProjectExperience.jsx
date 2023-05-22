@@ -13,7 +13,7 @@ export default function ProjectExperience() {
 
   return (
     <div className="w-full flex justify-center border-b-2 border-gray-200 py-10">
-      <div className="w-[900px] p-2">
+      <div className="w-[450px] md:w-full max-w-[900px] p-2">
         <div className="flex items-center gap-5">
           <h1 className="font-bold text-2xl py-5 text-amber-400">프로젝트</h1>
         </div>

@@ -18,20 +18,22 @@ export default function Education() {
   );
 
   return (
-    <div className="w-[780px] my-10 py-10">
+    <div className="w-[450px] md:w-full max-w-[780px] my-10 py-10">
       <div className="flex flex-col gap-8">
         <header className="flex flex-col gap-8">
-          <Link to={url} target="_blank" className="flex items-end gap-5 py-8">
+          <Link
+            to={url}
+            target="_blank"
+            className="flex flex-col items-center md:flex-row md:items-end gap-5 py-8"
+          >
             <img className="w-[300px]" src={imgUrl} alt={title} />
             <h1 className="text-3xl font-bold">{title}</h1>
           </Link>
           <iframe
-            className="rounded-2xl"
+            className="w-[500px] md:w-[640px] h-[360px] rounded-2xl"
             id="player"
             title={title}
             type="text/html"
-            width="640"
-            height="360"
             src={`https://www.youtube.com/embed/${videoId}`}
             frameBorder="0"
           />
@@ -53,7 +55,7 @@ export default function Education() {
               {whatILearn.map(({ header, body }) => (
                 <li>
                   <p className="font-semibold py-2">{header}</p>
-                  <pre>{body}</pre>
+                  <pre className="whitespace-pre-wrap">{body}</pre>
                 </li>
               ))}
             </ul>
