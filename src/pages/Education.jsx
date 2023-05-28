@@ -24,18 +24,17 @@ export default function Education() {
           <Link
             to={url}
             target="_blank"
-            className="flex flex-col items-center md:flex-row md:items-end gap-5 py-8"
+            className="flex flex-col items-center md:flex-row md:items-end gap-5 pt-8"
           >
             <img className="w-[300px]" src={imgUrl} alt={title} />
             <h1 className="text-3xl font-bold">{title}</h1>
           </Link>
-          <iframe
-            className="w-[500px] md:w-[640px] h-[360px] rounded-2xl"
-            id="player"
-            title={title}
-            type="text/html"
-            src={`https://www.youtube.com/embed/${videoId}`}
-            frameBorder="0"
+          <p className="text-sm text-end">
+            👆👆 더 자세한 커리큘럼을 알고싶으시면 제목을 클릭해주세요.
+          </p>
+          <img
+            src="https://github.com/mia-seo/portfolio/assets/117281717/7c1735bd-57b2-4ab1-9991-f90d6b6526a4"
+            alt="위코드"
           />
         </header>
         <main className="flex flex-col gap-8">

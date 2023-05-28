@@ -3,7 +3,7 @@
   {
     "id": 2,
     "title": "Framework / Library",
-    "list": ["React", "Recoil", "Next.js"]
+    "list": ["React", "Recoil", "Next.js", "React-Query"]
   },
   {
     "id": 3,
