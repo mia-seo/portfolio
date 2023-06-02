@@ -1,5 +1,15 @@
 [
   {
+    "id": 5,
+    "title": "Shu-Shu",
+    "thumbnail": "https://github.com/mia-seo/shu-shu/assets/117281717/31fd8bb1-c580-4594-acdf-a2070e0acdbd",
+    "projectInfo": [
+      "Firebase를 활용한 쇼핑몰 만들기 프로젝트입니다.",
+      "기간 : 2023.05.19 ~ 2023.05.26 (2주)"
+    ],
+    "stack": ["JavaScript", "React", "React Query", "TailwindCSS", "Github"]
+  },
+  {
     "id": 4,
     "title": "Youtube",
     "thumbnail": "https://user-images.githubusercontent.com/117281717/236795369-f9bf87be-39b7-4773-af65-fb0c4f52416c.png",

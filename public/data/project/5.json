@@ -1,0 +1,42 @@
+{
+  "id": 5,
+  "url": "https://github.com/mia-seo/shu-shu/assets/117281717/b38bd028-1584-4b57-9d6f-306d0b1acb30",
+  "title": "ShuShu",
+  "thumbnail": "https://github.com/mia-seo/shu-shu/assets/117281717/31fd8bb1-c580-4594-acdf-a2070e0acdbd",
+  "projectInfo": [
+    "Firebase를 활용한 쇼핑몰 만들기 프로젝트입니다.",
+    "기간 : 2023.05.19 ~ 2023.05.26 (2주)",
+    "Frontend 1명"
+  ],
+  "pages": [
+    { "title": "site", "url": "https://shiny-donut-cafced.netlify.app" },
+    { "title": "repo", "url": "https://github.com/mia-seo/shu-shu" },
+    {
+      "title": "blog",
+      "url": "https://velog.io/@mia/Firebase-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4-Realtime-database"
+    }
+  ],
+  "stack": ["JavaScript", "React", "React Query", "TailwindCSS", "Github"],
+  "whatILearn": [
+    {
+      "header": "백엔드 없이 프로젝트 만들기",
+      "body": "Firebase를 통해 백엔드 없이도 작은 프로젝트를 만들 수 있었습니다.\n지속적으로 다양한 공식 문서를 접해봄으로써 새로운 지식을 학습하는 것에 자신감을 점점 가지게 됨을 느꼈습니다."
+    }
+  ],
+  "contribute": [
+    {
+      "header": "이미지 미리보기와 이미지 업로드",
+      "body": [
+        "URL.createObjectURL() 메서드를 통해 이미지 미리보기 구현",
+        "cloudinary로 이미지를 업로드하여 메인 화면에 띄워줄 수 있도록 저장"
+      ]
+    },
+    {
+      "header": "React-Query Mutation의 활용",
+      "body": [
+        "stale time을 사용하면 데이터의 변화를 감지할 수 없는 문제 발생",
+        "mutation으로 쿼리키의 데이터를 무력화 시킴."
+      ]
+    }
+  ]
+}

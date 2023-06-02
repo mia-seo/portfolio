@@ -19,7 +19,11 @@ export default function Project() {
   return (
     <div className="flex flex-col gap-8 p-3 mt-24">
       <div className="w-full flex justify-center">
-        <img className="w-100px" src={project.thumbnail} alt={project.title} />
+        <img
+          className="w-[300px]"
+          src={project.thumbnail}
+          alt={project.title}
+        />
       </div>
       <div className="w-full flex justify-center mb-8">
         <img className="w-[60%]" src={project.url} alt={project.title} />
