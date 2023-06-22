@@ -6,7 +6,7 @@ import { usePortfolio } from "../context/ApiContext";
 
 export default function Education() {
   const location = useLocation().state;
-  const { title, description, imgUrl, url, videoId, whatILearn } = location;
+  const { title, description, imgUrl, url, whatILearn } = location;
   const { portfolio } = usePortfolio();
 
   const { data: project } = useQuery(
