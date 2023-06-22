@@ -11,8 +11,9 @@ export default function ProjectCard({ project }) {
 
   return (
     <div
-      className="card w-96 bg-base-1000 shadow-xl rounded-xl px-5 pb-5"
+      className="card w-96 bg-base-1000 shadow-xl rounded-xl px-5 pb-5 hover:scale-105 hover:shadow-zinc-500 transition-all duration-150"
       key={id}
+      onClick={() => goDetail(id)}
     >
       <figure className="px-10 pt-10">
         <img src={thumbnail} alt={title} className="rounded-xl" />
@@ -20,12 +21,6 @@ export default function ProjectCard({ project }) {
       <div className="card-body items-center text-center">
         <div className="flex justify-center items-center">
           <h2 className="card-title text-2xl font-bold p-2">{title}</h2>
-          <button
-            className="p-2 m-2 font-semibold text-sm btn btn-primary"
-            onClick={() => goDetail(id)}
-          >
-            자세히 보기
-          </button>
         </div>
         <ul>
           {projectInfo.map((el, index) => (
@@ -41,7 +36,10 @@ export default function ProjectCard({ project }) {
         </ul>
         <ul className="flex justify-center flex-wrap text-sm">
           {stack.map((el, index) => (
-            <li className="px-1 text-sm font-semibold" key={index}>
+            <li
+              className="px-1 text-sm font-semibold text-amber-500"
+              key={index}
+            >
               {el}
             </li>
           ))}

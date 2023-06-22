@@ -29,7 +29,7 @@ export default function Project() {
         <img className="w-[60%]" src={project.url} alt={project.title} />
       </div>
       <div className="flex justify-between px-3">
-        <h2 className="w-[30%] flex flex-col gap-5 text-xl font-bold">
+        <h2 className="w-[30%] flex flex-col gap-5 text-2xl font-bold">
           Project
         </h2>
         <ul className="w-[70%] flex flex-col gap-2 text-base list-disc mx-5 px-3">
@@ -39,7 +39,9 @@ export default function Project() {
         </ul>
       </div>
       <div className="flex justify-between px-3">
-        <h2 className="w-[30%] flex flex-col gap-5 text-xl font-bold">Stack</h2>
+        <h2 className="w-[30%] flex flex-col gap-5 text-2xl font-bold">
+          Stack
+        </h2>
         <div className="w-[70%] flex flex-wrap gap-2 text-base">
           {project &&
             project.stack.map((el, idx) => (
@@ -50,16 +52,18 @@ export default function Project() {
         </div>
       </div>
       <div className="flex justify-between px-3">
-        <h2 className="w-[30%] flex flex-col gap-5 text-xl font-bold">Pages</h2>
+        <h2 className="w-[30%] flex flex-col gap-5 text-2xl font-bold">
+          Pages
+        </h2>
         <ul className="w-[70%] flex flex-col gap-2 text-base list-disc mx-5">
           {project &&
             project.pages.map(({ title, url }) => (
               <li className="flex flex-wrap" key={title}>
-                <p className="font-semibold">{title} : </p>
+                <p className="font-semibold capitalize">{title} : </p>
                 <Link
                   to={url}
                   target="_blank"
-                  className="underline underline-offset-4"
+                  className="underline underline-offset-4 hover:text-amber-600"
                 >
                   {url}
                 </Link>
@@ -68,14 +72,14 @@ export default function Project() {
         </ul>
       </div>
       <div className="flex justify-between px-3">
-        <h2 className="w-[30%] flex flex-col gap-5 text-xl font-bold">
+        <h2 className="w-[30%] flex flex-col gap-5 text-2xl font-bold ">
           Contribute
         </h2>
         <ol className="w-[70%] flex flex-col gap-2 text-base list-decimal mx-5">
           {project &&
             project.contribute.map(({ header, body }) => (
               <li className="mx-3" key={header}>
-                <p className="font-semibold py-2">{header}</p>
+                <p className="font-semibold py-2 text-amber-500">{header}</p>
                 <ul className="list-disc mx-5">
                   {body.map((el) => (
                     <li key={el}>{el}</li>
@@ -87,18 +91,23 @@ export default function Project() {
       </div>
       {project.whatILearn && (
         <div className="flex justify-between p-3">
-          <h2 className="w-[30%] flex flex-col gap-5 text-xl font-bold">
+          <h2 className="w-[30%] flex flex-col gap-5 text-2xl font-bold ">
             What I Learn
           </h2>
-          <ul className="w-[70%] flex flex-col gap-2 text-base list-disc mx-5">
+          <ol className="w-[70%] flex flex-col gap-2 text-base list-decimal mx-5">
             {project &&
               project.whatILearn.map(({ header, body }) => (
                 <li className="mx-3" key={header}>
-                  <p className="my-2 font-semibold">{header}</p>
-                  <pre className="whitespace-pre-wrap">{body}</pre>
+                  <p className="my-2 font-semibold text-amber-500">{header}</p>
+                  {/* <pre className="whitespace-pre-wrap">{body}</pre> */}
+                  <ul className="list-disc mx-5">
+                    {body.map((el) => (
+                      <li key={el}>{el}</li>
+                    ))}
+                  </ul>
                 </li>
               ))}
-          </ul>
+          </ol>
         </div>
       )}
     </div>

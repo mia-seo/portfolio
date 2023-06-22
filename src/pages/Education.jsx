@@ -18,7 +18,7 @@ export default function Education() {
   );
 
   return (
-    <div className="w-[450px] md:w-full max-w-[780px] my-10 py-10">
+    <div className="w-[700px] md:w-full max-w-[800px] my-10 py-10">
       <div className="flex flex-col gap-8">
         <header className="flex flex-col gap-8">
           <Link
@@ -61,7 +61,7 @@ export default function Education() {
           </div>
           <div>
             <h2 className="font-semibold text-2xl text-amber-400">Project</h2>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-5">
               {project &&
                 project.map((project) => (
                   <ProjectCard key={project.id} project={project} />

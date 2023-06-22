@@ -31,7 +31,7 @@ export default function Infomation() {
           <ul className="w-full flex flex-col gap-3 px-2">
             {profile.info.map(({ id, text }) => (
               <li className="flex items-center gap-3" key={id}>
-                <label className="w-[30%] font-bold" htmlFor={id}>
+                <label className="w-[30%] font-bold capitalize" htmlFor={id}>
                   {id}
                 </label>
                 {id === "email" || id === "phone" ? (
@@ -42,7 +42,11 @@ export default function Infomation() {
                     readOnly
                   />
                 ) : (
-                  <Link className="text-base" to={text} target="_blank">
+                  <Link
+                    className="text-base underline underline-offset-4 hover:text-amber-600"
+                    to={text}
+                    target="_blank"
+                  >
                     {text}
                   </Link>
                 )}
